@@ -1,5 +1,6 @@
-//Lexical Analyzer first build v1.0
-//The goal of this build is to conudct lexical analysis on the content of the file.
+//Title: Lexical Analyzer first build v1.0
+//Purpose: The goal of this build is to conudct lexical analysis on the content of the file.
+//Limitation: Current build strcutures the grammar to be dictated by whitespace; token only gets lexed if a whitspace is in-between the next token
 
 
 #include <stdio.h>
@@ -14,6 +15,7 @@ int main(void){
 	char *output="what";
 
 	output = filereader("input.txt");
+
 	filewriter(FILE_NAME, output);
 
 	return 0;
